@@ -17,7 +17,7 @@
 $ch = curl_init();
 
 $array = [
-    'first_name' => 'David',
+    'first_name' => 'Cesar',
     'last_name' => 'Bolivar',
     'job' => 'Junior Programmer'
     
@@ -26,7 +26,9 @@ $array = [
 $data = http_build_query($array);
 
 curl_setopt($ch, CURLOPT_URL, 'https://reqres.in/api/users');
-curl_setopt($ch, CURLOPT_POST, true);
+// curl_setopt($ch, CURLOPT_POST, true);
+// Método para petición PUT/PATCH 
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PATCH');
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 

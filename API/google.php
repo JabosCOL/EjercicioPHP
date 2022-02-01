@@ -23,6 +23,7 @@ if (isset($_GET['direccion']))
 {
 
     $direccion = $_GET['direccion'];
+    // echo "<br>La dirección es: ".$direccion;
     $url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$direccion."&key=AIzaSyC8pozs1hxaly7msnsuc3RuVJ10DOR7gaQ";
     $json = file_get_contents($url);
     $datos = json_decode($json,true);

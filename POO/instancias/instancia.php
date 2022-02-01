@@ -10,6 +10,3 @@
 
     echo "Felicidades Sr ".$propietario." por la compra de su nuevo ".$auto->marca.
     " modelo ".$auto->modelo. " por el monto total de: $".$venta;
-
-
-?>

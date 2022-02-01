@@ -36,5 +36,3 @@ if (isset($_GET['direccion']))
     echo "<br>La longitud es: ".$lng;
     
 }
-
-?>

@@ -45,5 +45,3 @@ foreach ($decoded as $index => $value)
 }
 
 curl_close($ch);
-
-?>
